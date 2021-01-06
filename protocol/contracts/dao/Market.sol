@@ -1,5 +1,5 @@
 /*
-    Copyright 2020 Dynamic Dollar Devs, based on the works of the Empty Set Squad
+    Copyright 2020 Stabilized Set Dollar Devs, based on the works of the Empty Set Squad
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -109,10 +109,10 @@ contract Market is Comptroller, Curve {
     function redeemCoupons(uint256 couponEpoch, uint256 couponAmount) external {
         require(epoch().sub(couponEpoch) >= 2, "Market: Too early to redeem");
         decrementBalanceOfCoupons(msg.sender, couponEpoch, couponAmount, "Market: Insufficient coupon balance");
-        
+
         uint burnAmount = couponRedemptionPenalty(couponEpoch, couponAmount);
         uint256 redeemAmount = couponAmount - burnAmount;
-        
+
         redeemToAccount(msg.sender, redeemAmount);
 
         if(burnAmount > 0){
@@ -125,7 +125,7 @@ contract Market is Comptroller, Curve {
     function redeemCoupons(uint256 couponEpoch, uint256 couponAmount, uint256 minOutput) external {
         require(epoch().sub(couponEpoch) >= 2, "Market: Too early to redeem");
         decrementBalanceOfCoupons(msg.sender, couponEpoch, couponAmount, "Market: Insufficient coupon balance");
-        
+
         uint burnAmount = couponRedemptionPenalty(couponEpoch, couponAmount);
         uint256 redeemAmount = couponAmount - burnAmount;
 
@@ -134,7 +134,7 @@ contract Market is Comptroller, Curve {
             FILE,
             "Insufficient output amount"
         );
-        
+
         redeemToAccount(msg.sender, redeemAmount);
 
         if(burnAmount > 0){

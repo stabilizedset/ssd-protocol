@@ -7,7 +7,7 @@ const { expect } = require('chai');
 const MockBonding = contract.fromArtifact('MockBonding');
 const Dollar = contract.fromArtifact('Dollar');
 
-const INITIAL_STAKE_MULTIPLE = new BN(10).pow(new BN(6)); // 100 DSD -> 100M DSDS
+const INITIAL_STAKE_MULTIPLE = new BN(10).pow(new BN(6)); // 100 SSD -> 100M SSDS
 
 const FROZEN = new BN(0);
 const FLUID = new BN(1);

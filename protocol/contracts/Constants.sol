@@ -1,5 +1,5 @@
 /*
-    Copyright 2020 Dynamic Dollar Devs, based on the works of the Empty Set Squad
+    Copyright 2020 Stabilized Set Dollar Devs, based on the works of the Empty Set Squad
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -24,15 +24,15 @@ library Constants {
     uint256 private constant CHAIN_ID = 1; // Mainnet
 
     /* Bootstrapping */
-    uint256 private constant BOOTSTRAPPING_PERIOD = 150; // 150 epochs
-    uint256 private constant BOOTSTRAPPING_PRICE = 154e16; // 1.54 USDC (targeting 4.5% inflation)
+    uint256 private constant BOOTSTRAPPING_PERIOD = 180; // 180 epochs
+    uint256 private constant BOOTSTRAPPING_PRICE = 154e16; // 1.54 USDC (4.5% inflation)
 
     /* Oracle */
     address private constant USDC = address(0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48);
     uint256 private constant ORACLE_RESERVE_MINIMUM = 1e10; // 10,000 USDC
 
     /* Bonding */
-    uint256 private constant INITIAL_STAKE_MULTIPLE = 1e6; // 100 DSD -> 100M DSDS
+    uint256 private constant INITIAL_STAKE_MULTIPLE = 1e6; // 100 SSD -> 100M SSDS
 
     /* Epoch */
     struct EpochStrategy {
@@ -42,7 +42,7 @@ library Constants {
     }
 
     uint256 private constant EPOCH_OFFSET = 0;
-    uint256 private constant EPOCH_START = 1606348800;
+    uint256 private constant EPOCH_START = 1609945000; //update
     uint256 private constant EPOCH_PERIOD = 7200;
 
     /* Governance */
@@ -52,14 +52,14 @@ library Constants {
     uint256 private constant GOVERNANCE_EMERGENCY_DELAY = 6; // 6 epochs
 
     /* DAO */
-    uint256 private constant ADVANCE_INCENTIVE = 50e18; // 50 DSD
-    uint256 private constant DAO_EXIT_LOCKUP_EPOCHS = 36; // 36 epochs fluid
+    uint256 private constant ADVANCE_INCENTIVE = 50e18; // 50 SSD
+    uint256 private constant DAO_EXIT_LOCKUP_EPOCHS = 24; // 24 epochs fluid
 
     /* Pool */
     uint256 private constant POOL_EXIT_LOCKUP_EPOCHS = 12; // 12 epochs fluid
 
     /* Market */
-    uint256 private constant COUPON_EXPIRATION = 360;
+    uint256 private constant COUPON_EXPIRATION = 540;
     uint256 private constant DEBT_RATIO_CAP = 35e16; // 35%
     uint256 private constant INITIAL_COUPON_REDEMPTION_PENALTY = 50e16; // 50%
     uint256 private constant COUPON_REDEMPTION_PENALTY_DECAY = 3600; // 1 hour
@@ -135,7 +135,7 @@ library Constants {
     function getDebtRatioCap() internal pure returns (Decimal.D256 memory) {
         return Decimal.D256({value: DEBT_RATIO_CAP});
     }
-    
+
     function getInitialCouponRedemptionPenalty() internal pure returns (Decimal.D256 memory) {
         return Decimal.D256({value: INITIAL_COUPON_REDEMPTION_PENALTY});
     }
