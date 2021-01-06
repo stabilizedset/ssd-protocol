@@ -1,5 +1,5 @@
 /*
-    Copyright 2020 Stabilized Set Dollar Devs, based on the works of the Empty Set Squad
+    Copyright 2021 Stabilized Set Dollar Devs, based on the works of the Empty Set Squad
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -33,10 +33,6 @@ contract Implementation is State, Bonding, Market, Regulator, Govern {
     function initialize() initializer public {
         // committer reward:
         mintToAccount(msg.sender, 100e18); // 100 SSD to committer
-        // contributor  rewards:
-        mintToAccount(0xF414CFf71eCC35320Df0BB577E3Bc9B69c9E1f07, 1000e18); // 1000 SSD to devnull
-        mintToAccount(0x8908b99821967e7f321b1D8e485658e48F10E483,  800e18); //  800 SSD to AlexL
-        mintToAccount(0x7a03b2e8ACe63164896717C1b22647aA450954A7,  500e18); //  500 SSD to Dr Disben
     }
 
     function advance() external incentivized {
