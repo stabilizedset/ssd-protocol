@@ -1,5 +1,5 @@
 /*
-    Copyright 2020 Stabilized Set Dollar Devs, based on the works of the Empty Set Squad
+    Copyright 2021 Stabilized Set Dollar Devs, based on the works of the Empty Set Squad
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -58,7 +58,7 @@ contract Oracle is IOracle {
         Require.that(
             _index == 0 || _dollar == token1,
             FILE,
-            "Døllar not found"
+            "SSD not found"
         );
     }
 

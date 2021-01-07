@@ -17,12 +17,12 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.17+commit.d19bba13\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"epoch\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/apple/Desktop/dev/ssd-protocol/protocol/contracts/oracle/IDAO.sol\":\"IDAO\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/apple/Desktop/dev/ssd-protocol/protocol/contracts/oracle/IDAO.sol\":{\"keccak256\":\"0xb1827b3ac66d2733d2afec132b64fab12088ea0b8b9fa727f11ff0bccc5730cd\",\"urls\":[\"bzz-raw://535d9c7f6578749bf6a63d87103c4e75001d81cac884e12b7ef861879ce5d659\",\"dweb:/ipfs/QmRuAk2QysRjhK55gAHqW4Nt6D1K3FgrC6METKqQEd7uHw\"]}},\"version\":1}",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.17+commit.d19bba13\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"epoch\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/apple/Desktop/dev/ssd-protocol/protocol/contracts/oracle/IDAO.sol\":\"IDAO\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/apple/Desktop/dev/ssd-protocol/protocol/contracts/oracle/IDAO.sol\":{\"keccak256\":\"0xc3c03db14809855178b400b5b050e4b8a03b99f69f4391d3d25412ebee4c419d\",\"urls\":[\"bzz-raw://6d8615e4c61f1339432bd185851c39711487e96016fd0473e0586cbe55e60687\",\"dweb:/ipfs/QmbnBzi4Rx4qGuFXvhBsdyRVRbfZ1CvnzYfj1rdrH4AsY8\"]}},\"version\":1}",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "sourceMap": "",
   "deployedSourceMap": "",
-  "source": "/*\n    Copyright 2020 Stabilized Set Dollar Devs, based on the works of the Empty Set Squad\n\n    Licensed under the Apache License, Version 2.0 (the \"License\");\n    you may not use this file except in compliance with the License.\n    You may obtain a copy of the License at\n\n    http://www.apache.org/licenses/LICENSE-2.0\n\n    Unless required by applicable law or agreed to in writing, software\n    distributed under the License is distributed on an \"AS IS\" BASIS,\n    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n    See the License for the specific language governing permissions and\n    limitations under the License.\n*/\n\npragma solidity ^0.5.17;\n\ncontract IDAO {\n    function epoch() external view returns (uint256);\n}",
+  "source": "/*\n    Copyright 2021 Stabilized Set Dollar Devs, based on the works of the Empty Set Squad\n\n    Licensed under the Apache License, Version 2.0 (the \"License\");\n    you may not use this file except in compliance with the License.\n    You may obtain a copy of the License at\n\n    http://www.apache.org/licenses/LICENSE-2.0\n\n    Unless required by applicable law or agreed to in writing, software\n    distributed under the License is distributed on an \"AS IS\" BASIS,\n    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n    See the License for the specific language governing permissions and\n    limitations under the License.\n*/\n\npragma solidity ^0.5.17;\n\ncontract IDAO {\n    function epoch() external view returns (uint256);\n}",
   "sourcePath": "/Users/apple/Desktop/dev/ssd-protocol/protocol/contracts/oracle/IDAO.sol",
   "ast": {
     "absolutePath": "/Users/apple/Desktop/dev/ssd-protocol/protocol/contracts/oracle/IDAO.sol",
@@ -242,7 +242,7 @@
   },
   "networks": {},
   "schemaVersion": "3.3.3",
-  "updatedAt": "2021-01-06T16:53:33.442Z",
+  "updatedAt": "2021-01-07T10:55:43.312Z",
   "devdoc": {
     "methods": {}
   },

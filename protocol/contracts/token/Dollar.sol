@@ -1,5 +1,5 @@
 /*
-    Copyright 2020 Stabilized Set Dollar Devs, based on the works of the Empty Set Squad
+    Copyright 2021 Stabilized Set Dollar Devs, based on the works of the Empty Set Squad
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -27,7 +27,7 @@ import "./IDollar.sol";
 contract Dollar is IDollar, MinterRole, ERC20Detailed, Permittable, ERC20Burnable  {
 
     constructor()
-    ERC20Detailed("Dynamic Set Dollar", "SSD", 18)
+    ERC20Detailed("Stabilized Set Dollar", "SSD", 18)
     Permittable()
     public
     { }

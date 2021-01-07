@@ -23,12 +23,12 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.17+commit.d19bba13\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[{\"internalType\":\"address\",\"name\":\"_account\",\"type\":\"address\"}],\"name\":\"isBlacklisted\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/apple/Desktop/dev/ssd-protocol/protocol/contracts/oracle/IUSDC.sol\":\"IUSDC\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/apple/Desktop/dev/ssd-protocol/protocol/contracts/oracle/IUSDC.sol\":{\"keccak256\":\"0x2b888c96cbe6d95967c382b82bce4406eb766fcab50d0cafb039074af2670113\",\"urls\":[\"bzz-raw://3d59c02911caf8a761f2f848ea65bc76b607f60b857384ad76d4c133336fd618\",\"dweb:/ipfs/QmSuF4ASsohZNMjHFF4bB3iPLwgYGqU97ZcUWMn4qugijD\"]}},\"version\":1}",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.17+commit.d19bba13\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[{\"internalType\":\"address\",\"name\":\"_account\",\"type\":\"address\"}],\"name\":\"isBlacklisted\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/apple/Desktop/dev/ssd-protocol/protocol/contracts/oracle/IUSDC.sol\":\"IUSDC\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/apple/Desktop/dev/ssd-protocol/protocol/contracts/oracle/IUSDC.sol\":{\"keccak256\":\"0x0cea0fda06d7e7a9e61e0c3d5d64c64ff26c3aa6ff1947fafb104b6e09904224\",\"urls\":[\"bzz-raw://8eb7258624d2430a362631e3e2d1299b66edf0cabb5af8f73bcb48786a0d04a0\",\"dweb:/ipfs/Qmd2SmUWcDbXyrVuonCCbvEgHDsqxBNCP37bgMmdRzwKmU\"]}},\"version\":1}",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "sourceMap": "",
   "deployedSourceMap": "",
-  "source": "/*\n    Copyright 2020 Stabilized Set Dollar Devs, based on the works of the Empty Set Squad\n\n    Licensed under the Apache License, Version 2.0 (the \"License\");\n    you may not use this file except in compliance with the License.\n    You may obtain a copy of the License at\n\n    http://www.apache.org/licenses/LICENSE-2.0\n\n    Unless required by applicable law or agreed to in writing, software\n    distributed under the License is distributed on an \"AS IS\" BASIS,\n    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n    See the License for the specific language governing permissions and\n    limitations under the License.\n*/\n\npragma solidity ^0.5.17;\n\ncontract IUSDC {\n    function isBlacklisted(address _account) external view returns (bool);\n}",
+  "source": "/*\n    Copyright 2021 Stabilized Set Dollar Devs, based on the works of the Empty Set Squad\n\n    Licensed under the Apache License, Version 2.0 (the \"License\");\n    you may not use this file except in compliance with the License.\n    You may obtain a copy of the License at\n\n    http://www.apache.org/licenses/LICENSE-2.0\n\n    Unless required by applicable law or agreed to in writing, software\n    distributed under the License is distributed on an \"AS IS\" BASIS,\n    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n    See the License for the specific language governing permissions and\n    limitations under the License.\n*/\n\npragma solidity ^0.5.17;\n\ncontract IUSDC {\n    function isBlacklisted(address _account) external view returns (bool);\n}",
   "sourcePath": "/Users/apple/Desktop/dev/ssd-protocol/protocol/contracts/oracle/IUSDC.sol",
   "ast": {
     "absolutePath": "/Users/apple/Desktop/dev/ssd-protocol/protocol/contracts/oracle/IUSDC.sol",
@@ -299,7 +299,7 @@
   },
   "networks": {},
   "schemaVersion": "3.3.3",
-  "updatedAt": "2021-01-06T16:53:33.447Z",
+  "updatedAt": "2021-01-07T10:55:43.373Z",
   "devdoc": {
     "methods": {}
   },
