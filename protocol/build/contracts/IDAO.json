@@ -17,25 +17,25 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.17+commit.d19bba13\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"epoch\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/home/name/Desktop/Files/projects/dynamic/dollar/protocol/contracts/oracle/IDAO.sol\":\"IDAO\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/name/Desktop/Files/projects/dynamic/dollar/protocol/contracts/oracle/IDAO.sol\":{\"keccak256\":\"0x54f222247eee02dab0f5bc0a663db0d973b5ee75f45cc56c03af8cbe1b0488b4\",\"urls\":[\"bzz-raw://61c7cc14fa5d8fa19f498a486c3d35dbcf2a4c61c37b3f6b96c2d0468589172b\",\"dweb:/ipfs/QmYDn8tiVhsY7SiJVDWwRBY8DvEx32pPsMxYyBe13HXMqV\"]}},\"version\":1}",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.17+commit.d19bba13\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"epoch\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/apple/Desktop/dev/ssd-protocol/protocol/contracts/oracle/IDAO.sol\":\"IDAO\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/apple/Desktop/dev/ssd-protocol/protocol/contracts/oracle/IDAO.sol\":{\"keccak256\":\"0xb1827b3ac66d2733d2afec132b64fab12088ea0b8b9fa727f11ff0bccc5730cd\",\"urls\":[\"bzz-raw://535d9c7f6578749bf6a63d87103c4e75001d81cac884e12b7ef861879ce5d659\",\"dweb:/ipfs/QmRuAk2QysRjhK55gAHqW4Nt6D1K3FgrC6METKqQEd7uHw\"]}},\"version\":1}",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "sourceMap": "",
   "deployedSourceMap": "",
   "source": "/*\n    Copyright 2020 Stabilized Set Dollar Devs, based on the works of the Empty Set Squad\n\n    Licensed under the Apache License, Version 2.0 (the \"License\");\n    you may not use this file except in compliance with the License.\n    You may obtain a copy of the License at\n\n    http://www.apache.org/licenses/LICENSE-2.0\n\n    Unless required by applicable law or agreed to in writing, software\n    distributed under the License is distributed on an \"AS IS\" BASIS,\n    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n    See the License for the specific language governing permissions and\n    limitations under the License.\n*/\n\npragma solidity ^0.5.17;\n\ncontract IDAO {\n    function epoch() external view returns (uint256);\n}",
-  "sourcePath": "/home/name/Desktop/Files/projects/dynamic/dollar/protocol/contracts/oracle/IDAO.sol",
+  "sourcePath": "/Users/apple/Desktop/dev/ssd-protocol/protocol/contracts/oracle/IDAO.sol",
   "ast": {
-    "absolutePath": "/home/name/Desktop/Files/projects/dynamic/dollar/protocol/contracts/oracle/IDAO.sol",
+    "absolutePath": "/Users/apple/Desktop/dev/ssd-protocol/protocol/contracts/oracle/IDAO.sol",
     "exportedSymbols": {
       "IDAO": [
-        8591
+        8838
       ]
     },
-    "id": 8592,
+    "id": 8839,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 8585,
+        "id": 8832,
         "literals": [
           "solidity",
           "^",
@@ -43,7 +43,7 @@
           ".17"
         ],
         "nodeType": "PragmaDirective",
-        "src": "646:24:41"
+        "src": "653:24:41"
       },
       {
         "baseContracts": [],
@@ -51,9 +51,9 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 8591,
+        "id": 8838,
         "linearizedBaseContracts": [
-          8591
+          8838
         ],
         "name": "IDAO",
         "nodeType": "ContractDefinition",
@@ -61,29 +61,29 @@
           {
             "body": null,
             "documentation": null,
-            "id": 8590,
+            "id": 8837,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "epoch",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 8586,
+              "id": 8833,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "706:2:41"
+              "src": "713:2:41"
             },
             "returnParameters": {
-              "id": 8589,
+              "id": 8836,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8588,
+                  "id": 8835,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8590,
-                  "src": "732:7:41",
+                  "scope": 8837,
+                  "src": "739:7:41",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -91,10 +91,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 8587,
+                    "id": 8834,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "732:7:41",
+                    "src": "739:7:41",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -104,123 +104,145 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "731:9:41"
+              "src": "738:9:41"
             },
-            "scope": 8591,
-            "src": "692:49:41",
+            "scope": 8838,
+            "src": "699:49:41",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "external"
           }
         ],
-        "scope": 8592,
-        "src": "672:71:41"
+        "scope": 8839,
+        "src": "679:71:41"
       }
     ],
-    "src": "646:97:41"
+    "src": "653:97:41"
   },
   "legacyAST": {
-    "absolutePath": "/home/name/Desktop/Files/projects/dynamic/dollar/protocol/contracts/oracle/IDAO.sol",
-    "exportedSymbols": {
-      "IDAO": [
-        8591
-      ]
+    "attributes": {
+      "absolutePath": "/Users/apple/Desktop/dev/ssd-protocol/protocol/contracts/oracle/IDAO.sol",
+      "exportedSymbols": {
+        "IDAO": [
+          8838
+        ]
+      }
     },
-    "id": 8592,
-    "nodeType": "SourceUnit",
-    "nodes": [
+    "children": [
       {
-        "id": 8585,
-        "literals": [
-          "solidity",
-          "^",
-          "0.5",
-          ".17"
-        ],
-        "nodeType": "PragmaDirective",
-        "src": "646:24:41"
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.5",
+            ".17"
+          ]
+        },
+        "id": 8832,
+        "name": "PragmaDirective",
+        "src": "653:24:41"
       },
       {
-        "baseContracts": [],
-        "contractDependencies": [],
-        "contractKind": "contract",
-        "documentation": null,
-        "fullyImplemented": false,
-        "id": 8591,
-        "linearizedBaseContracts": [
-          8591
-        ],
-        "name": "IDAO",
-        "nodeType": "ContractDefinition",
-        "nodes": [
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": false,
+          "linearizedBaseContracts": [
+            8838
+          ],
+          "name": "IDAO",
+          "scope": 8839
+        },
+        "children": [
           {
-            "body": null,
-            "documentation": null,
-            "id": 8590,
-            "implemented": false,
-            "kind": "function",
-            "modifiers": [],
-            "name": "epoch",
-            "nodeType": "FunctionDefinition",
-            "parameters": {
-              "id": 8586,
-              "nodeType": "ParameterList",
-              "parameters": [],
-              "src": "706:2:41"
-            },
-            "returnParameters": {
-              "id": 8589,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 8588,
-                  "name": "",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 8590,
-                  "src": "732:7:41",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_uint256",
-                    "typeString": "uint256"
-                  },
-                  "typeName": {
-                    "id": 8587,
-                    "name": "uint256",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "732:7:41",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_uint256",
-                      "typeString": "uint256"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
               ],
-              "src": "731:9:41"
+              "name": "epoch",
+              "scope": 8838,
+              "stateMutability": "view",
+              "superFunction": null,
+              "visibility": "external"
             },
-            "scope": 8591,
-            "src": "692:49:41",
-            "stateMutability": "view",
-            "superFunction": null,
-            "visibility": "external"
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 8833,
+                "name": "ParameterList",
+                "src": "713:2:41"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 8837,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 8834,
+                        "name": "ElementaryTypeName",
+                        "src": "739:7:41"
+                      }
+                    ],
+                    "id": 8835,
+                    "name": "VariableDeclaration",
+                    "src": "739:7:41"
+                  }
+                ],
+                "id": 8836,
+                "name": "ParameterList",
+                "src": "738:9:41"
+              }
+            ],
+            "id": 8837,
+            "name": "FunctionDefinition",
+            "src": "699:49:41"
           }
         ],
-        "scope": 8592,
-        "src": "672:71:41"
+        "id": 8838,
+        "name": "ContractDefinition",
+        "src": "679:71:41"
       }
     ],
-    "src": "646:97:41"
+    "id": 8839,
+    "name": "SourceUnit",
+    "src": "653:97:41"
   },
   "compiler": {
     "name": "solc",
     "version": "0.5.17+commit.d19bba13.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "3.3.1",
-  "updatedAt": "2020-11-25T22:34:45.289Z",
+  "schemaVersion": "3.3.3",
+  "updatedAt": "2021-01-06T16:53:33.442Z",
   "devdoc": {
     "methods": {}
   },
