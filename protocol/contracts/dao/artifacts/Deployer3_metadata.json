@@ -1,0 +1,1160 @@
+{
+	"compiler": {
+		"version": "0.5.17+commit.d19bba13"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "Transfer",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "implementation",
+						"type": "address"
+					}
+				],
+				"name": "Upgraded",
+				"type": "event"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "spender",
+						"type": "address"
+					}
+				],
+				"name": "allowance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "spender",
+						"type": "address"
+					}
+				],
+				"name": "allowanceCoupons",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "spender",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "approve",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "candidate",
+						"type": "address"
+					}
+				],
+				"name": "approveFor",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "balanceOf",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "balanceOfBonded",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "epoch",
+						"type": "uint256"
+					}
+				],
+				"name": "balanceOfCoupons",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "balanceOfStaged",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "epoch",
+						"type": "uint256"
+					}
+				],
+				"name": "bootstrappingAt",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "epoch",
+						"type": "uint256"
+					}
+				],
+				"name": "couponsExpiration",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "decimals",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "dollar",
+				"outputs": [
+					{
+						"internalType": "contract IDollar",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "epoch",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "epochTime",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "epoch",
+						"type": "uint256"
+					}
+				],
+				"name": "expiringCoupons",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "epoch",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "i",
+						"type": "uint256"
+					}
+				],
+				"name": "expiringCouponsAtIndex",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "implementation",
+						"type": "address"
+					}
+				],
+				"name": "implement",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "implementation",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "impl",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "initialize",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "candidate",
+						"type": "address"
+					}
+				],
+				"name": "isInitialized",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "candidate",
+						"type": "address"
+					}
+				],
+				"name": "isNominated",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "name",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "oracle",
+				"outputs": [
+					{
+						"internalType": "contract IOracle",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "epoch",
+						"type": "uint256"
+					}
+				],
+				"name": "outstandingCoupons",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "candidate",
+						"type": "address"
+					}
+				],
+				"name": "periodFor",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "pool",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "candidate",
+						"type": "address"
+					}
+				],
+				"name": "recordedVote",
+				"outputs": [
+					{
+						"internalType": "enum Candidate.Vote",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "candidate",
+						"type": "address"
+					}
+				],
+				"name": "rejectFor",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "candidate",
+						"type": "address"
+					}
+				],
+				"name": "startFor",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "statusOf",
+				"outputs": [
+					{
+						"internalType": "enum Account.Status",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "symbol",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "totalBonded",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "epoch",
+						"type": "uint256"
+					}
+				],
+				"name": "totalBondedAt",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "totalCoupons",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "totalDebt",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "totalNet",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "totalRedeemable",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "totalStaged",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "totalSupply",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "recipient",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "transfer",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "sender",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "recipient",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "transferFrom",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "candidate",
+						"type": "address"
+					}
+				],
+				"name": "votesFor",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {
+				"balanceOfStaged(address)": {
+					"notice": "Account"
+				},
+				"dollar()": {
+					"notice": "Global"
+				},
+				"epoch()": {
+					"notice": "Epoch"
+				},
+				"name()": {
+					"notice": "ERC20 Interface"
+				},
+				"recordedVote(address,address)": {
+					"notice": "Governance"
+				},
+				"transfer(address,uint256)": {
+					"notice": "ERC20 Interface"
+				}
+			}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"localhost/contracts/dao/Deployer.sol": "Deployer3"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@openzeppelin/contracts/GSN/Context.sol": {
+			"keccak256": "0x90a3995645af7562d84b9d69363ffa5ae7217714ab61e951bf7bc450f40e4061",
+			"urls": [
+				"bzz-raw://216ef9d6b614db4eb46970b4e84903f2534a45572dd30a79f0041f1a5830f436",
+				"dweb:/ipfs/QmNPrJ4MWKUAWzKXpUqeyKRUfosaoANZAqXgvepdrCwZAG"
+			]
+		},
+		"@openzeppelin/contracts/access/Roles.sol": {
+			"keccak256": "0xb002c378d7b82a101bd659c341518953ca0919d342c0a400196982c0e7e7bcdb",
+			"urls": [
+				"bzz-raw://00a788c4631466c220b385bdd100c571d24b2deccd657615cfbcef6cadf669a4",
+				"dweb:/ipfs/QmTEwDbjJNxmMNCDMqtuou3dyM8Wtp8Q9NFvn7SAVM7Jf3"
+			]
+		},
+		"@openzeppelin/contracts/access/roles/MinterRole.sol": {
+			"keccak256": "0xbe8eef6f2cb4e427f5c5d8a76865ccd06e55a4f1d6671ba312d45bfa705aedbf",
+			"urls": [
+				"bzz-raw://badf338a5e22c8658c01fe2ce89b487d9dbf6d2d9d5eb49df7415383e2498765",
+				"dweb:/ipfs/QmP5aMkvFwMJyuQjKE8ADh5tkWYqonb4KjgkAjgYEVVFAv"
+			]
+		},
+		"@openzeppelin/contracts/math/SafeMath.sol": {
+			"keccak256": "0x640b6dee7a4b830bdfd52b5031a07fc2b12209f5b2e29e5d364a7d37f69d8076",
+			"urls": [
+				"bzz-raw://31113152e1ddb78fe7a4197f247591ca894e93f916867beb708d8e747b6cc74f",
+				"dweb:/ipfs/QmbZaJyXdpsYGykVhHH9qpVGQg9DGCxE2QufbCUy3daTgq"
+			]
+		},
+		"@openzeppelin/contracts/token/ERC20/ERC20.sol": {
+			"keccak256": "0xb15af804e2bc97db51e4e103f13de9fe13f87e6b835d7a88c897966c0e58506e",
+			"urls": [
+				"bzz-raw://1e8cff8437557fc915a3bed968fcd8f2df9809599e665ef69c2c9ce628548055",
+				"dweb:/ipfs/QmP5spYP8vs2jvLF8zNrXUbqB79hMsoEvMHiLcBxerWKcm"
+			]
+		},
+		"@openzeppelin/contracts/token/ERC20/ERC20Burnable.sol": {
+			"keccak256": "0x9b94356691f3cbf90a5d83ae3fdf6a5a662bb004d2bd8b034160d60221807e64",
+			"urls": [
+				"bzz-raw://14a9d33db455302b8bb9fdb28998efefbe5a1cb41b29e31391609f646b2ab351",
+				"dweb:/ipfs/Qmd4wFr6GEMZnnxgXeq3gmp7cs8tqDuHp3TVNhCbjnux2V"
+			]
+		},
+		"@openzeppelin/contracts/token/ERC20/ERC20Detailed.sol": {
+			"keccak256": "0x4a3a810b7ebe742e897e1fd428b3eeed2196d3acea58eaf9c566ed10d545d2ed",
+			"urls": [
+				"bzz-raw://28d03f328e19e4099d5013de0649afaeaabac1a614e130767ab1cb4aca9775b6",
+				"dweb:/ipfs/Qmb9iW7yNuYehB2NfhRMs9TakqbLVQhBhmGMkaDZ5g1Eb4"
+			]
+		},
+		"@openzeppelin/contracts/token/ERC20/IERC20.sol": {
+			"keccak256": "0xe5bb0f57cff3e299f360052ba50f1ea0fff046df2be070b6943e0e3c3fdad8a9",
+			"urls": [
+				"bzz-raw://59fd025151435da35faa8093a5c7a17de02de9d08ad27275c5cdf05050820d91",
+				"dweb:/ipfs/QmQMvwEcPhoRXzbXyrdoeRtvLoifUW9Qh7Luho7bmUPRkc"
+			]
+		},
+		"@openzeppelin/upgrades/contracts/utils/Address.sol": {
+			"keccak256": "0x7be7f8e4c08bc70ff9815e3f11c569f42aa3c447b5bc61fd75fb5cec97f63a9f",
+			"urls": [
+				"bzz-raw://f301a9226d637e1593916ba2de7b0b28c35f2adc3ca8526289fe1eedafa83bc2",
+				"dweb:/ipfs/QmPb991LE8nyvhB4BkX46P1Pan2ijH9tfqWwLAz65VUUKs"
+			]
+		},
+		"@uniswap/lib/contracts/libraries/Babylonian.sol": {
+			"keccak256": "0xad37a774ad6a438432acb1a475b71b2991a41ba98f1cd814c6d78f9109370a38",
+			"urls": [
+				"bzz-raw://0f1fbfda71c124ef0436d4e0fe1d0ee9440e2d169ba5ecb890d3d5089ccdd185",
+				"dweb:/ipfs/QmXvHC7AfnhNoXEi2tCDRVgHcWuADfHToyCUYZ2tG5Pgen"
+			]
+		},
+		"@uniswap/lib/contracts/libraries/FixedPoint.sol": {
+			"keccak256": "0x589aacdc69a24cc0500bc13581b34d4431ee972333fa288a9b42a4d14707e003",
+			"urls": [
+				"bzz-raw://965edb53f5f0d9e23f7878ae95809239b26604420b0111f7b9cb199d21b84afe",
+				"dweb:/ipfs/QmYkGQ6xPsNFfdkJr76vGoCehffXspqKyoGZ5utGJoWNuc"
+			]
+		},
+		"@uniswap/v2-core/contracts/interfaces/IUniswapV2Factory.sol": {
+			"keccak256": "0xe5905c0989cf5a865ed9bb7b9252536ca011c5b744017a82a7d4443b9c00a891",
+			"urls": [
+				"bzz-raw://5d2a90a0a796491507462a3da18c3f8819721d571572d765a2207c35bf0a0389",
+				"dweb:/ipfs/Qmf9ACYiT3qzjgsYuhm866FBdiBpRMXAPpQhSFbgqcyhHt"
+			]
+		},
+		"@uniswap/v2-core/contracts/interfaces/IUniswapV2Pair.sol": {
+			"keccak256": "0x7c9bc70e5996c763e02ff38905282bc24fb242b0ef2519a003b36824fc524a4b",
+			"urls": [
+				"bzz-raw://85d5ad2dd23ee127f40907a12865a1e8cb5828814f6f2480285e1827dd72dedf",
+				"dweb:/ipfs/QmayKQWJgWmr46DqWseADyUanmqxh662hPNdAkdHRjiQQH"
+			]
+		},
+		"localhost/contracts/Constants.sol": {
+			"keccak256": "0x905e9884330ba8fa69a94e30aaa4d390e764796d2b6c3e098ab35380982ab326",
+			"urls": [
+				"bzz-raw://51c3b28e5be24124c036523303971db1bd36d011113f0666ae82080c2430589f",
+				"dweb:/ipfs/QmSu5iXDBF2js7nWtikhW3sYfnYByCiGyTScuc3jzweeMy"
+			]
+		},
+		"localhost/contracts/dao/Deployer.sol": {
+			"keccak256": "0x2d70f4ce7abca1627f47069911bd12f9f0c4dc4370961cb5a00846066df0ba2f",
+			"urls": [
+				"bzz-raw://e7f0d8fa41e70679002bb829a3d44a8299cb42a6c6ae9e387833f6ab920c3585",
+				"dweb:/ipfs/Qme5jYsD668xbq84vnGo3jQFpNncJx3BUB8pNSjMPjSb6Q"
+			]
+		},
+		"localhost/contracts/dao/Getters.sol": {
+			"keccak256": "0xfb8ee89cf21f0fbfe5a48dab01788b385cb945fa91b8a34229cae5bad495b8dc",
+			"urls": [
+				"bzz-raw://f7b1674990b4b2dd895e232c9bf96bcfc9f422af94e039182e1863b53846264e",
+				"dweb:/ipfs/QmXjCYjdvC74Qiiu6oERc6jSEpkT7Vu7iedqa7aeLg9AQT"
+			]
+		},
+		"localhost/contracts/dao/Permission.sol": {
+			"keccak256": "0x14ce83cde7a16500238e1a920752ec31faf0c10092f37e630784385fa5edb2db",
+			"urls": [
+				"bzz-raw://6a34d01f0bae3056058dd6ae9fb86e338f56cb7b755c9e2d4b2185b3cc80972b",
+				"dweb:/ipfs/QmXGEK1tFye9DoxQ6UieVD2rQ9RaJxhkKrrW7YQME5e3wN"
+			]
+		},
+		"localhost/contracts/dao/Setters.sol": {
+			"keccak256": "0x484e3ab868ef81df0b19bbbf65ddf0a47b5d028145153868566493977cb74248",
+			"urls": [
+				"bzz-raw://0350b802571200c35462ea68703ebfa302d2f1eb4e6c8ee7407c8b91cfa22298",
+				"dweb:/ipfs/QmRVYzrModRgs7VdE7fUca5rvuK1r3KeiEKmZS4UaPSd9B"
+			]
+		},
+		"localhost/contracts/dao/State.sol": {
+			"keccak256": "0xe00f0a485116b4d0761ce0a342506a528c09b205bbcf6cabb75c5a6512d44ab5",
+			"urls": [
+				"bzz-raw://5137813ffad84302fa2b1aef07e7d4058f930547d0cfc9357441473a210727b4",
+				"dweb:/ipfs/QmdvtXuMFy2dH6wvywzVGcbHLg2KB5ZaGq3daxLdkxJzhS"
+			]
+		},
+		"localhost/contracts/dao/Upgradeable.sol": {
+			"keccak256": "0x71d4eba6fdd80bde4d1ecf7fdad00d8f3d3852b42cd351f492d35c7fdf5b5056",
+			"urls": [
+				"bzz-raw://4f96c08807090376696b3ce08170f5ffb529354960abc640752d3e2db5c49426",
+				"dweb:/ipfs/QmWXBvkEesxfCf1GDhKcSFqTXAEcMAtxHbX7KXC2L196sJ"
+			]
+		},
+		"localhost/contracts/external/Decimal.sol": {
+			"keccak256": "0x926436df2756647f5695942c1d7ea2b4c6a4bd98fd73440590676b72365bdc93",
+			"urls": [
+				"bzz-raw://a64854133089f28b1d6a787a78f479de0ddf5247238ad84c63a7810079dac247",
+				"dweb:/ipfs/QmbbUsPEewApHPmJUE2ZUtZzv6z57Qr7kxKHGp2kYnarip"
+			]
+		},
+		"localhost/contracts/external/LibEIP712.sol": {
+			"keccak256": "0xf4d7a88da8be529a53feaa65d110288b003763df23a02c8f9e91058fe653c638",
+			"urls": [
+				"bzz-raw://4c252f8983678ed15c03b59f9579959591d1fb7a0772b4057277fe6977b2ce7b",
+				"dweb:/ipfs/QmNTXwdPULiUBZkWa8Dj5aJ3DDhrmBpMqaFMShAdACYbSj"
+			]
+		},
+		"localhost/contracts/external/Require.sol": {
+			"keccak256": "0x3b8edcc166414f1c408972bf8130893a601a29eb87454621b187e754a8372922",
+			"urls": [
+				"bzz-raw://3a900707d5229254a1f021438d32adf87cf37a251cc0eea926e24cccad3ecf14",
+				"dweb:/ipfs/QmWda2qiJEUnjftpqhxR1cZPJXqjkHJwFhLpXurod3uwnW"
+			]
+		},
+		"localhost/contracts/external/UniswapV2Library.sol": {
+			"keccak256": "0xd64a9a9bcb92eba3ee35e94393bde31a82829f1784efa5b5464d17d1bb7e0096",
+			"urls": [
+				"bzz-raw://6718ea8498c8fcabe9a81815067fbf3ec3e8c3af25f81bc83311c01ff05789bd",
+				"dweb:/ipfs/QmSz3xWZk7J3woub7r3P849trnpBhrepFimxPVK2B21wNJ"
+			]
+		},
+		"localhost/contracts/external/UniswapV2OracleLibrary.sol": {
+			"keccak256": "0xe1f5153d7e166f8667f06f9dbae90af5bafde60aa51bfd9547b77a8c3a7511e8",
+			"urls": [
+				"bzz-raw://bd64f42d76838b1ecee4f87965e483e5130b29c74f226b176195756e16507a4f",
+				"dweb:/ipfs/QmTiqY2iCZJKeYjds9YgevVqQbsL57MB3MX24QiggPZLFr"
+			]
+		},
+		"localhost/contracts/oracle/IDAO.sol": {
+			"keccak256": "0xc3c03db14809855178b400b5b050e4b8a03b99f69f4391d3d25412ebee4c419d",
+			"urls": [
+				"bzz-raw://6d8615e4c61f1339432bd185851c39711487e96016fd0473e0586cbe55e60687",
+				"dweb:/ipfs/QmbnBzi4Rx4qGuFXvhBsdyRVRbfZ1CvnzYfj1rdrH4AsY8"
+			]
+		},
+		"localhost/contracts/oracle/IOracle.sol": {
+			"keccak256": "0xaa3bba8a53be3ce815aeed3802db23279687b88f8eb38567a72c3310a82ad156",
+			"urls": [
+				"bzz-raw://77dbad681e0433da3614fbbd10d65ea6a2364d8383c919e944e51bde28270895",
+				"dweb:/ipfs/Qmf2rDLhk1Pu7E72CSffmwJVYwUSzRJTtMEnx9iASPQPqT"
+			]
+		},
+		"localhost/contracts/oracle/IUSDC.sol": {
+			"keccak256": "0x0cea0fda06d7e7a9e61e0c3d5d64c64ff26c3aa6ff1947fafb104b6e09904224",
+			"urls": [
+				"bzz-raw://8eb7258624d2430a362631e3e2d1299b66edf0cabb5af8f73bcb48786a0d04a0",
+				"dweb:/ipfs/Qmd2SmUWcDbXyrVuonCCbvEgHDsqxBNCP37bgMmdRzwKmU"
+			]
+		},
+		"localhost/contracts/oracle/Liquidity.sol": {
+			"keccak256": "0x2f48f32bf79d3c2ef947b6a347c95bc4c0b5e43de763de0bdd5ebea6958519e0",
+			"urls": [
+				"bzz-raw://6ab39094cb0218c5ebab7cd7d7eb09c8d119f854b375254928cb562e6a381d9a",
+				"dweb:/ipfs/QmW9TtzGjnnvtsejZx66m4C7MNkfNyjZVifPwX6QmMy97A"
+			]
+		},
+		"localhost/contracts/oracle/Oracle.sol": {
+			"keccak256": "0x42bff987cd575d796e3d851449f41e8b5feede542ff3c6be5857e3cdfd23cbbf",
+			"urls": [
+				"bzz-raw://2677793ed064a8544f0152e80d28534e91ca5b2144d5d6a7768eb14819cd3385",
+				"dweb:/ipfs/QmQfsx6QzshTooKDFUggTaPAzXw3LpXy1CfDd8avbrKqyH"
+			]
+		},
+		"localhost/contracts/oracle/Pool.sol": {
+			"keccak256": "0x1dcc9a14108d3f5b22e24fec67ed96a07fc841b5959ea2b5756ab7a6be69a264",
+			"urls": [
+				"bzz-raw://da7548e11266ae42416414d300087e036d8a236f83b5a1b4b662c95b1489e32d",
+				"dweb:/ipfs/QmVQ2W66AM5RtgWoYUnydvH2JTGTsWLCxhFb6ZrARGhsgA"
+			]
+		},
+		"localhost/contracts/oracle/PoolGetters.sol": {
+			"keccak256": "0xcb024d6bd81ebdc1788ffbc4cc646d7fb27ccb80a0d7be95ca2642b041af71b4",
+			"urls": [
+				"bzz-raw://2eece2277c6fcdae8f3f107b906d5b96bb1c855fe7ebf6a920b196b5aff47330",
+				"dweb:/ipfs/QmUUrofU9rH37fmKj6JcTUYcn2fMiroKp2XKzYL2aJjRzx"
+			]
+		},
+		"localhost/contracts/oracle/PoolSetters.sol": {
+			"keccak256": "0xc289fb01d662f0ca2ecfc41651cdcc451bfe4931602296dbf5e70f5361e566e0",
+			"urls": [
+				"bzz-raw://536b5f108197faef39aee7ef4ee3249e1d009ec5019418b4e7070c662a1c0dc9",
+				"dweb:/ipfs/QmPdkS221AiwiW34FvtrEDjUARbdb4JbsZCxTLcidq4hP8"
+			]
+		},
+		"localhost/contracts/oracle/PoolState.sol": {
+			"keccak256": "0xf834d89a46f7729a0a81a790d8b8b017dc968e96c2b3699b41fc290a50a2cb1b",
+			"urls": [
+				"bzz-raw://ea60b86e89a12ed8f0f363737fc6141edc851d188c54c78f4ef90ee245eafc92",
+				"dweb:/ipfs/QmdEsS3MZbrvTZUZeU6ujUHLVg5Y6931vH94tNQpKkCyQZ"
+			]
+		},
+		"localhost/contracts/token/Dollar.sol": {
+			"keccak256": "0xcd3f682f1d590aeb28fc5c4172665bb4ce334af68331ef93ce0657380954b19f",
+			"urls": [
+				"bzz-raw://16cb67377764f37d0bd3a45f5a2d447035386e64ee2b3027d8be998ada47abf6",
+				"dweb:/ipfs/QmUizjyxHy5XT33VdjUyEkufrrfdQynbKYRHGtKLShyfEf"
+			]
+		},
+		"localhost/contracts/token/IDollar.sol": {
+			"keccak256": "0x183c179b08de38029305312e975e8cda8a33f31c869f2000bb31d16342451279",
+			"urls": [
+				"bzz-raw://abc3b6561b80ddcdb2c5e0db8061ba975a414ac2899729947a6b5c03eb718cde",
+				"dweb:/ipfs/QmZaycvuoSmt95aUMF1jw3wEKs1q2uFimNszZ2k4R6BoYr"
+			]
+		},
+		"localhost/contracts/token/Permittable.sol": {
+			"keccak256": "0xd212931df20e43bad51cc4d27b32cb21b19ead74fd919feb08ded7ffa5d5ad90",
+			"urls": [
+				"bzz-raw://2af44f0e7aa30c11a7d748249086620e02b2f55487f2dccd39950b313051cb02",
+				"dweb:/ipfs/QmdioreyxgPYbgCfarJGoggN3w99nTAYquFXLFKs1oit4S"
+			]
+		}
+	},
+	"version": 1
+}

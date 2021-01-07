@@ -4250,12 +4250,58 @@
         }
       },
       "links": {},
-      "address": "0x80141DD75A6407c55CdA984D3A9deA43C1299785",
-      "transactionHash": "0xba28326a9b2d8e3fe3b3b453fb5fc353ba9d0eeafc5c5319a2bd8fc4ec57a068"
+      "address": "0x496b075dAf3d9f751Ff3e280C8B0ce9825db18A6",
+      "transactionHash": "0x4931bd3126c9b0862363e68e6f5289a000ea6bfd434f63d76edc6f1e488af864"
+    },
+    "3": {
+      "events": {
+        "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "from",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "to",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "value",
+              "type": "uint256"
+            }
+          ],
+          "name": "Transfer",
+          "type": "event"
+        },
+        "0xbc7cd75a20ee27fd9adebab32041f755214dbc6bffa90cc0225b39da2e5c2d3b": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "implementation",
+              "type": "address"
+            }
+          ],
+          "name": "Upgraded",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0xef7EcEF2d8848159a5D348549b41171ca56DD564",
+      "transactionHash": "0xe18cd7883fd630da3787c9bdd6e83bb7cd8d9c85e87bfd10793c13c7c020b736"
     }
   },
   "schemaVersion": "3.3.3",
-  "updatedAt": "2021-01-07T10:55:41.337Z",
+  "updatedAt": "2021-01-07T12:28:19.097Z",
+  "networkType": "ethereum",
   "devdoc": {
     "methods": {}
   },

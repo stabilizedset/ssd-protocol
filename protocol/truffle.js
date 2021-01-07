@@ -48,29 +48,33 @@ module.exports = {
       port: 7545,            // Standard Ethereum port (default: none)
       network_id: "*",       // Any network (default: none)
       gas: 6700000,           // Gas sent with each transaction (default: ~6700000)
-      gasPrice: 100000000000
+      gasPrice: 100000000000,
+      websockets: true
     },
 
     //Another network with more advanced options...
     mainnet: {
-      provider: () => new HDWalletProvider(privateKey, 'https://mainnet.infura.io/v3/' + infuraId),
+      provider: () => new HDWalletProvider(privateKey, 'wss://mainnet.infura.io/ws/v3/' + infuraId),
       network_id: 1,          // Mainnet's id
       gas: 6700000,           // Gas sent with each transaction (default: ~6700000)
-      gasPrice: 100000000000,  // 100 gwei (in wei) (default: 100 gwei)
+      gasPrice: 80000000000,  // 100 gwei (in wei) (default: 100 gwei)
       timeoutBlocks: 1440,  // # of blocks before a deployment times out  (minimum/default: 50)
-      skipDryRun: true
+      skipDryRun: true,
+      confirmations: 2,
+      networkCheckTimeout: 10000000
     },
 
     // Useful for deploying to a public network.
     // NB: It's important to wrap the provider as a function.
     ropsten: {
-      provider: () => new HDWalletProvider(privateKey, 'https://ropsten.infura.io/v3/' + infuraId),
+      provider: () => new HDWalletProvider(privateKey, 'wss://ropsten.infura.io/ws/v3/' + infuraId),
       network_id: 3,       // Ropsten's
       gas: 6700000,           // Gas sent with each transaction (default: ~6700000)
-      gasPrice: 100000000000,  // 100 gwei (in wei) (default: 100 gwei)      // Ropsten has a lower block limit than mainnet
+      gasPrice: 1000000000,  // 100 gwei (in wei) (default: 100 gwei)      // Ropsten has a lower block limit than mainnet
       confirmations: 2,    // # of confs to wait between deployments. (default: 0)
       timeoutBlocks: 200,  // # of blocks before a deployment times out  (minimum/default: 50)
-      skipDryRun: true     // Skip dry run before migrations? (default: false for public nets )
+      skipDryRun: true,     // Skip dry run before migrations? (default: false for public nets )
+      networkCheckTimeout: 10000000
     },
 
     rinkeby: {

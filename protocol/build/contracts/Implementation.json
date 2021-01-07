@@ -4681,15 +4681,560 @@
           ],
           "name": "Withdraw",
           "type": "event"
+        },
+        "0x1cd1213d4276c260e84170b4a39025dc8398fbf744edee0709261769b456b94b": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "account",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "internalType": "uint256",
+              "name": "epoch",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "couponAmount",
+              "type": "uint256"
+            }
+          ],
+          "name": "CouponBurn",
+          "type": "event"
         }
       },
       "links": {},
-      "address": "0xd2a87BdB5003874892395894F91e8abd9Ccdc529",
-      "transactionHash": "0xa0be88d27a00070e2a4a57bfa73e8edbe57b2ca4e7fb61fd6401b980ec22042a"
+      "address": "0xdaa05D95Ab55B40c8097D7190B8381B1A347B38E",
+      "transactionHash": "0xc0c29693772e33c3fa6ce2d78673eb57bd49f42fedb120281fbc6d4909cb5a15"
+    },
+    "3": {
+      "events": {
+        "0xc30b728d1c19e5db3678b8ea9e9a063a5655071e1a325c2f7fdbca48baa90600": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "uint256",
+              "name": "epoch",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "block",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "timestamp",
+              "type": "uint256"
+            }
+          ],
+          "name": "Advance",
+          "type": "event"
+        },
+        "0x44002fdef5a0c2d2e4e05572e9780b95aef97e0e93ffd7cc076b09fa78ff2b46": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "account",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "start",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "value",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "valueUnderlying",
+              "type": "uint256"
+            }
+          ],
+          "name": "Bond",
+          "type": "event"
+        },
+        "0x815ca4497ab9fc80c76f210e6e842a5e198e195aa136034557eee144f790e7bb": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "account",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "candidate",
+              "type": "address"
+            }
+          ],
+          "name": "Commit",
+          "type": "event"
+        },
+        "0x8ff27e6b95060c1ca851e7c2c28af8b413eb1a8bcb637b0290da9543a709cce3": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "owner",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "spender",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "value",
+              "type": "uint256"
+            }
+          ],
+          "name": "CouponApproval",
+          "type": "event"
+        },
+        "0x1cd1213d4276c260e84170b4a39025dc8398fbf744edee0709261769b456b94b": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "account",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "internalType": "uint256",
+              "name": "epoch",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "couponAmount",
+              "type": "uint256"
+            }
+          ],
+          "name": "CouponBurn",
+          "type": "event"
+        },
+        "0x753df65b37159bf237ae1fca97ba1bd57cf83bc9498f271a514a4d7bafe87bda": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "uint256",
+              "name": "epoch",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "couponsExpired",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "lessRedeemable",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "lessDebt",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "newBonded",
+              "type": "uint256"
+            }
+          ],
+          "name": "CouponExpiration",
+          "type": "event"
+        },
+        "0xbce252db29f761f815dc2e9ea60005af065efba6eb619d2a0b2a113fdeb61414": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "account",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "internalType": "uint256",
+              "name": "epoch",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "dollarAmount",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "couponAmount",
+              "type": "uint256"
+            }
+          ],
+          "name": "CouponPurchase",
+          "type": "event"
+        },
+        "0x46e9903ae8ac9e9f0c9bc321b05965c1c036e7d4783758703f5cdfc4133c51b6": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "account",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "internalType": "uint256",
+              "name": "epoch",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "couponAmount",
+              "type": "uint256"
+            }
+          ],
+          "name": "CouponRedemption",
+          "type": "event"
+        },
+        "0x0f1dbb1ccbe57a1590c7baad7b01d581b730c9ebc535dcde4345e6db424063d8": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "from",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "to",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "internalType": "uint256",
+              "name": "epoch",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "value",
+              "type": "uint256"
+            }
+          ],
+          "name": "CouponTransfer",
+          "type": "event"
+        },
+        "0xe1fffcc4923d04b559f4d29a8bfc6cda04eb5b0d3c460751c2402c5c5cc9109c": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "account",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "value",
+              "type": "uint256"
+            }
+          ],
+          "name": "Deposit",
+          "type": "event"
+        },
+        "0xbb4f656853bc420ad6e4321622c07eefb4ed40e3f91b35553ce14a6dff4c0981": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "account",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "amount",
+              "type": "uint256"
+            }
+          ],
+          "name": "Incentivization",
+          "type": "event"
+        },
+        "0xd15e38a680a427478883cd2d32eb664cb6bb2090b0126a23ebaf3e3784b8c56b": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "candidate",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "account",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "internalType": "uint256",
+              "name": "start",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "period",
+              "type": "uint256"
+            }
+          ],
+          "name": "Proposal",
+          "type": "event"
+        },
+        "0x5e139d4b8080a4a00dcc151e8217694aeebae893936326aa22096924a9906677": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "uint256",
+              "name": "epoch",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "price",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "newDebt",
+              "type": "uint256"
+            }
+          ],
+          "name": "SupplyDecrease",
+          "type": "event"
+        },
+        "0x32fcaa1e76ed9517f4749d8ec9a77dd5e7329456d740b9bf9665d900eef5e283": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "uint256",
+              "name": "epoch",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "price",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "newRedeemable",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "lessDebt",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "newBonded",
+              "type": "uint256"
+            }
+          ],
+          "name": "SupplyIncrease",
+          "type": "event"
+        },
+        "0xff7db5a0dc69b02c191ba632db46961b7d0daa1bd30709ddba9b80ad0a15d2c0": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "uint256",
+              "name": "epoch",
+              "type": "uint256"
+            }
+          ],
+          "name": "SupplyNeutral",
+          "type": "event"
+        },
+        "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "from",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "to",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "value",
+              "type": "uint256"
+            }
+          ],
+          "name": "Transfer",
+          "type": "event"
+        },
+        "0x93530ac0ee8c50e696e13c5ac62355d0c0ba4bd943620d5bda1eb08b64ae7512": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "account",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "start",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "value",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "valueUnderlying",
+              "type": "uint256"
+            }
+          ],
+          "name": "Unbond",
+          "type": "event"
+        },
+        "0xbc7cd75a20ee27fd9adebab32041f755214dbc6bffa90cc0225b39da2e5c2d3b": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "implementation",
+              "type": "address"
+            }
+          ],
+          "name": "Upgraded",
+          "type": "event"
+        },
+        "0xbe50c78cbc15b0864819aadea36c6499da421b33c38e2ef19bebda583c708c78": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "account",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "candidate",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "enum Candidate.Vote",
+              "name": "vote",
+              "type": "uint8"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "bonded",
+              "type": "uint256"
+            }
+          ],
+          "name": "Vote",
+          "type": "event"
+        },
+        "0x884edad9ce6fa2440d8a54cc123490eb96d2768479d49ff9c7366125a9424364": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "account",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "value",
+              "type": "uint256"
+            }
+          ],
+          "name": "Withdraw",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x0FA7AcFB09D6bC2581d54e1b2FcBa1D38d695868",
+      "transactionHash": "0x88e183fc5d39c967bfa56992c6f8ed1f935ba5c08f5293418587aa4ffbbd6f75"
     }
   },
   "schemaVersion": "3.3.3",
-  "updatedAt": "2021-01-07T10:55:41.710Z",
+  "updatedAt": "2021-01-07T12:28:19.218Z",
+  "networkType": "ethereum",
   "devdoc": {
     "methods": {}
   },
