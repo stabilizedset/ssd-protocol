@@ -42,7 +42,7 @@ library Constants {
     }
 
     uint256 private constant EPOCH_OFFSET = 0;
-    uint256 private constant EPOCH_START = 1609945000; //update
+    uint256 private constant EPOCH_START = 1610114400; //Friday, January 8, 2021 2:00:00 PM GMT Launch
     uint256 private constant EPOCH_PERIOD = 7200;
 
     /* Governance */
