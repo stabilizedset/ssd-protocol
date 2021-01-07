@@ -3,5 +3,4 @@
 .DS_Store
 protocol/.env
 protocol/node_modules
-protocol/build
-protocol/build/contracts
+*.build
