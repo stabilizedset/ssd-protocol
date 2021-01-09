@@ -3182,48 +3182,7 @@
     "name": "solc",
     "version": "0.5.17+commit.d19bba13.Emscripten.clang"
   },
- "networks": {
-    "1": {
-      "events": {
-        "0xbc7cd75a20ee27fd9adebab32041f755214dbc6bffa90cc0225b39da2e5c2d3b": {
-          "anonymous": false,
-          "inputs": [
-            {
-              "indexed": true,
-              "internalType": "address",
-              "name": "implementation",
-              "type": "address"
-            }
-          ],
-          "name": "Upgraded",
-          "type": "event"
-        }
-      },
-      "links": {},
-      "address": "0x7bf5898a9c24818a90d9763bbf4cd1432645c17f",
-      "transactionHash": "0x9aaba45d6ba58ed12844a3237b40217ece0bc8d90f79d838bca5eeb56620947a"
-    },
-    "3": {
-      "events": {
-        "0xbc7cd75a20ee27fd9adebab32041f755214dbc6bffa90cc0225b39da2e5c2d3b": {
-          "anonymous": false,
-          "inputs": [
-            {
-              "indexed": true,
-              "internalType": "address",
-              "name": "implementation",
-              "type": "address"
-            }
-          ],
-          "name": "Upgraded",
-          "type": "event"
-        }
-      },
-      "links": {},
-      "address": "0x945ef9c094739AbcE98DBEEB177AEC5663C17834",
-      "transactionHash": "0xbdf310e452485f4b8e23d88cc4f7233be9bf00188e4060e6ad7145fb6748c35f"
-    }
-  },
+  "networks": {},
   "schemaVersion": "3.3.3",
   "updatedAt": "2021-01-07T10:55:43.771Z",
   "devdoc": {

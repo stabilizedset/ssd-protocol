@@ -1,0 +1,39 @@
+{
+	"compiler": {
+		"version": "0.5.17+commit.d19bba13"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"details": "Library for managing addresses assigned to a Role.",
+			"methods": {},
+			"title": "Roles"
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"localhost/FlattenedDollar.sol": "Roles"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"localhost/FlattenedDollar.sol": {
+			"keccak256": "0x11dfc68b1aca5ba2fc2286a2d04c81587d32d8e94fa183e49e65148f753a190b",
+			"urls": [
+				"bzz-raw://7dddca55d8883c10e3ca020b4da9f45ca8e74e909066c253441178da44469859",
+				"dweb:/ipfs/QmeoXYhoojz3jNUSN2pXnsqU5zpW99phRjd1LCGHVNJ4dN"
+			]
+		}
+	},
+	"version": 1
+}
